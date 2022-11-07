@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F8D2A4;
+}
+
+head {
+  background-color: #F8D2A4;
+}
+
+.nav{
+  display: flex;
+  vertical-align: middle;
+  justify-content:  space-between;
+    align-items: left;
+  min-height: 8vh;
+  background-color: #576066;
+  opacity: 0.8;
+  font-family: 'Raleway';
+}
+
+.links{
+  display: flex;
+  padding-top: 20px;
+  width: 30%;
+}
+.links li{
+  list-style: none;
+
+
+}
+.links a{
+color: #FCFFE7;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin-right: 10px;
+
+}

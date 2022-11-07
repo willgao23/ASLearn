@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> Learn the ASL Alphabet </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<script>
+  var curIndex = 0;
+  var aslImages = new Array();
+  var aslAnswers = new Array();
+
+  function initArrays() {
+    aslImages[0] = "./hackcampImages/0.jpg";
+    aslImages[1] = "./hackcampImages/1.jpg";
+    aslImages[2] = "./hackcampImages/2.jpg";
+    aslImages[3] = "./hackcampImages/3.jpg";
+    aslImages[4] = "./hackcampImages/4.jpg";
+    aslImages[5] = "./hackcampImages/5.jpg";
+    aslImages[6] = "./hackcampImages/6.jpg";
+    aslImages[7] = "./hackcampImages/7.jpg";
+    aslImages[8] = "./hackcampImages/8.jpg";
+    aslImages[9] = "./hackcampImages/9.jpg";
+    aslImages[10] = "./hackcampImages/10.jpg";
+    aslImages[11] = "./hackcampImages/11.jpg";
+    aslImages[12] = "./hackcampImages/12.jpg";
+    aslImages[13] = "./hackcampImages/13.jpg";
+    aslImages[14] = "./hackcampImages/14.jpg";
+    aslImages[15] = "./hackcampImages/15.jpg";
+    aslImages[16] = "./hackcampImages/16.jpg";
+    aslImages[17] = "./hackcampImages/17.jpg";
+    aslImages[18] = "./hackcampImages/18.jpg";
+    aslImages[19] = "./hackcampImages/19.jpg";
+    aslImages[20] = "./hackcampImages/20.jpg";
+    aslImages[21] = "./hackcampImages/21.jpg";
+    aslImages[22] = "./hackcampImages/22.jpg";
+    aslImages[23] = "./hackcampImages/23.jpg";
+    aslImages[24] = "./hackcampImages/24.jpg";
+    aslImages[25] = "./hackcampImages/25.jpg";
+
+    aslAnswers[0] = "A";
+    aslAnswers[1] = "B";
+    aslAnswers[2] = "C";
+    aslAnswers[3] = "D";
+    aslAnswers[4] = "E";
+    aslAnswers[5] = "F";
+    aslAnswers[6] = "G";
+    aslAnswers[7] = "H";
+    aslAnswers[8] = "I";
+    aslAnswers[9] = "J";
+    aslAnswers[10] = "K";
+    aslAnswers[11] = "L";
+    aslAnswers[12] = "M";
+    aslAnswers[13] = "N";
+    aslAnswers[14] = "O";
+    aslAnswers[15] = "P";
+    aslAnswers[16] = "Q";
+    aslAnswers[17] = "R";
+    aslAnswers[18] = "S";
+    aslAnswers[19] = "T";
+    aslAnswers[20] = "U";
+    aslAnswers[21] = "V";
+    aslAnswers[22] = "W";
+    aslAnswers[23] = "X";
+    aslAnswers[24] = "Y";
+    aslAnswers[25] = "Z";
+
+    document.getElementById("marking").innerHTML = '';
+  }
+
+  function checkAnswer(event) {
+    event.preventDefault();
+    var guess = document.getElementById("answer").value;
+    if (guess.toLowerCase() === aslAnswers[curIndex].toLowerCase()) {
+      document.getElementById("marking").innerHTML = '<img height = 50px width = 50px src = correct.png />';
+    } else if (guess.toLowerCase() !== aslAnswers[curIndex].toLowerCase()) {
+      document.getElementById("marking").innerHTML = '<img height = 50px width = 50px src = wrong.jpg />';
+    }
+  }
+
+  function getRandomImage() {
+    initArrays();
+    var index = Math.floor(Math.random() * aslImages.length);
+    curIndex = index;
+    return document.getElementById("result").innerHTML = '<img src="' + aslImages[index] + '" />';
+  }
+</script>
+
+<body onload="getRandomImage()">
+
+  <div class="nav">
+    <div class="logo">
+      <h4><img  width="175px" height="65px" class="logo" src="Group 13.png" /> </h4>
+    </div>
+    <div class=direction>
+      <ul class="links">
+        <li class="option"><a href="index.html">Home</a></li>
+        <li class="option"><a href="learner.html">Practice</a></li>
+        <li class="option"><a href="dictionary.html">Dictionary</a></li>
+        <li class="option"><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="surrounding">
+    <div class="main">
+      <div class="top">
+        <div id="result"> </div>
+      </div>
+
+      <div class="bottom">
+        <form action="#" method="post" id="form" onsubmit="checkAnswer(event)">
+          <div class="form-text">
+            <div>
+              <p class="text">What letter is this?</p>
+            </div>
+            <div class="blank">
+              <div>
+                <input type="text" id="answer">
+              </div>
+              <div>
+                <span id="marking"></span>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div>
+              <input class="button" type="submit" value="Submit">
+            </div>
+          </div>
+        </form>
+        <div class="pass-btn">
+          <div width=100px></div>
+          <div>
+            <button class="pass" onclick="setInterval(getRandomImage(), 1500)"> Next Letter &#8594 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

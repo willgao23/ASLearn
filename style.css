@@ -1,0 +1,213 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8D2A4;
+}
+
+.text{
+  font-family: Raleway;
+  font-size: 30px;
+  
+}
+.nav{
+  display: flex;
+  vertical-align: middle;
+  justify-content:  space-between;
+    align-items: left;
+  min-height: 8vh;
+  background-color: #576066;
+  opacity: 0.8;
+  font-family: 'Raleway';
+}
+
+.links{
+  display: flex;
+  padding-top: 20px;
+  width: 30%;
+}
+.links li{
+  list-style: none;
+
+
+}
+.links a{
+color: #FCFFE7;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin-right: 10px;
+
+}
+
+.surrounding {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.blank {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pass {
+  float: right;
+  font-family: "Raleway";
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+   border: none;
+  color: white;
+  background-color: #9FBBCC;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: 0.2s
+}
+
+.pass:hover {
+   padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  color:  #576066;
+  background-color:white;
+}
+
+.button{
+  float: left;
+  font-family: "Raleway";
+  font-size: 25px;
+  border-radius: 10px;
+  color: white;
+  background-color: #9FBBCC;
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: 0.2s; 
+}
+
+
+.button:hover {
+   padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  color: #576066;
+  background-color: white;
+}
+
+
+#answer {
+  border: none;
+  font-size: 40px;
+  font: arial;
+  border-radius: 50px;
+  padding-left: 500px;
+}
+
+.pass-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+
+
+/* 
+#result {
+  width: 300px;
+  height: 300px;  
+}
+
+.buttons {
+  vertical-align: top;
+  justify-content: center;
+}
+
+.pass {
+  float: right;
+  padding-right: 30px;
+  padding-left: 30px;
+   border: none;
+  color: white;
+  background-color:9FBBCC;
+  border-radius: 10px;
+  font-size: 80px;
+  margin-right: auto;
+  margin-top: 20px;
+    justify-contet: center;
+}
+
+.button{
+  float: left;
+  font: Arial;
+  font-size: 40px;
+  border-radius: 10px;
+color: white;
+  background-color:9FBBCC;
+  border: none;
+  padding-right: 30px;
+  padding-left: 30px;
+padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+    justify-contet: center;
+}
+#answer {
+  border: none;
+  font-size: 40px;
+  font: arial;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#form {} 
+ */
